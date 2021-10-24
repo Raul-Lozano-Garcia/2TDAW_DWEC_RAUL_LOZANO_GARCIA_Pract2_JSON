@@ -16,7 +16,6 @@ document.write(`
 let cont=1;
 let fecha;
 
-//SI EL USUARIO ESCRIBE COSAS SIN SENTIDO O NO ESCRIBE NADA SE MOSTRARÁN TAL Y COMO ESTÁN EN EL JSON
 if(ordenar.toLocaleLowerCase()==="ascendente"){
     hamburguesas.sort(
         (a,b)=>{
