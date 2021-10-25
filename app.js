@@ -42,7 +42,6 @@ ham_filtradas.forEach(
     (item,cont)=>{
         fecha=item["fecha de creacion"].split("-");
         document.write(`
-        <main>
             <section>
                 <article>
                     <div class="burger">
