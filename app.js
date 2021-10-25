@@ -1,5 +1,3 @@
-//¿INFO DEL ARTICLE ASÍ A PALO SECO, CON LOS TRUE Y TODO?
-
 "use strict"
 
 let ordenar=prompt("¿Como quieres mostrar los datos ordenados por nombre. ¿De manera ascendente (por defecto) o descendente?") || "ascendente";
@@ -11,9 +9,9 @@ document.write(`
     </div>
     <h1>Lista de hamburguesas</h1>
 </header>
+<main>
 `);
 
-let cont=1;
 let fecha;
 
 if(ordenar.toLocaleLowerCase()==="ascendente"){
@@ -41,7 +39,7 @@ if(ham_filtradas.length===0){
 }
 
 ham_filtradas.forEach(
-    (item)=>{
+    (item,cont)=>{
         fecha=item["fecha de creacion"].split("-");
         document.write(`
         <main>
@@ -113,8 +111,7 @@ ham_filtradas.forEach(
                     </fieldset>
                 </form>
             </section>
-        </main>
         `);
-        cont++;
     }
 )
+document.write("</main>");
